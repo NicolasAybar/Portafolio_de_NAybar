@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link CDN de font-awesome-->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Link para iconos de bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--CSS estilos de mi proyecto-->
+    <link rel="stylesheet" href="estilo.css">
+    <title>Portfolio Nicolas Aybar</title>
+    
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Nico Aybar</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/mifoto.JPG" alt="">
+            </div>
+            <h1>Nicolas Aybar</h1>
+            <h2>Alumno de UTN - Developers Full Stack</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-square-github"></i></a>
+                <a href="https://www.linkedin.com/in/nicolas-aybar-9482671b5/"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Nicolas Aybar.</span> Estudiante de la diplomatura de Full Stack de la UTN de BA.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            30-08-1974
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            3513235508
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            nicokato10@gmail.com
+                        </li>
+
+                        <li>
+                            <strong>Dirección</strong>
+                            Cordoba, Argentina
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-code"></i>
+                            <span>Developer</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Musica</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="bi bi-brilliance"></i>
+                            <span>MMA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="bi bi-hammer"></i>
+                            <span>Home</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Libros</span>
+                        </div>
+                        <div class="interes">
+                            <i class="bi bi-camera-reels-fill"></i>
+                            <span>Movies</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>Fotos</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--<button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>-->
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SCRUM</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Analista de sistemas</h4>
+                        <span class="casa">Colegio siglo 21</span>
+                        <span class="fecha">2010 - 2014</span>
+                        <p>Mi tesis fue premiada con el primer puesto de la expo talento 2014</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Analista programador</h4>
+                        <span class="casa">Universidad siglo 21</span>
+                        <span class="fecha">2010 - 2012</span>
+                        <p>Programacion con HTML, CSS y Javascript con SQL</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Diplomatura Full Stack</h4>
+                        <span class="casa">Universidad tecnologica de Buenos Aires</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Lenguajes HTML, CSS, Javascript, React, SQL, Mongo</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Proyect manager</h4>
+                        <span class="casa">Universidad iberoamericana de Buenos Aires</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Gestor de proyecto con metodologia PMI(Proyect manager institute)</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Metodologías agiles</h4>
+                        <span class="casa">Universidad iberoamericana de Buenos Aires</span>
+                        <span class="fecha">2023 - 2023</span>
+                        <p>Metodologías SCRUM</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">FREELANCE</span>
+                        <span class="fecha">2022 - 2024</span>
+                        <p>Programador web en Javascript, HTML, CSS y REACT</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Analista funcional</h4>
+                        <span class="casa">Libertad SA</span>
+                        <span class="fecha">2017 - 2022</span>
+                        <p>Area de Mejora de procesos, con funcion de product owner , metodologias SCRUN(Jira, Treyo,
+                            Microsoft project)</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Backend Developer</h4>
+                        <span class="casa">Libertad SA</span>
+                        <span class="fecha">2014 - 2017</span>
+                        <p>Area de sistemas, funcion de manejo de bases de datos en SQL</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Developer</h4>
+                        <span class="casa">La Agustina SA</span>
+                        <span class="fecha">2013 - 2014</span>
+                        <p>Diseño y configuracion de sistema de gestion en Asp.net y SQL</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Developer</h4>
+                        <span class="casa">Mosaicos Beltran SRL</span>
+                        <span class="fecha">2013 - 2014</span>
+                        <p>Diseño y configuracion de sistema de gestion en Asp.net y SQL</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">   
+                    <img src="img/react.jpg" alt="">
+                    <div class="overlay">
+                        <h3>CRUD con Recat y SQL</h3>
+                        <p>Programacion React</p>
+                        <a href="https://github.com/NicolasAybar/FullStackCRUDReactMysql">ir al proyecto</a>
+                    </div>
+                </div>
+
+                <div class="proyecto">  
+                        <img src="img/ecommerce.jpg" alt="Carrito de compras">
+                    <div class="overlay">
+                        <h3>Ecommerce</h3>
+                        <p>HTML, CSS y Jscript</p>
+                        <a href="https://github.com/NicolasAybar/carrito-de-compras">ir al proyecto</a>
+                    </div>
+                </div>
+                
+                <div class="proyecto">
+                    
+                        <img src="img/memes.jpg" alt="">
+                    </a>
+
+                    <div class="overlay">
+                        <h3>React interactivo</h3>
+                        <p>Hacer memes</p>
+                        <a href="https://github.com/NicolasAybar/memesconreactjs">Ir al proyecto</a>
+                    </div>
+                </div>
+
+                <div class="proyecto">                 
+                        <img src="img/excel.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Planilla que envia ws</h3>
+                        <p>Excel</p>
+                        <a href="https://github.com/NicolasAybar/Excel_enviar_whatsapp">Ir al proyecto</a>
+                    </div>
+                </div>
+
+                <div class="proyecto">  
+                        <img src="img/inmobiliaria.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Web</h3>
+                        <p>Pagina web de inmobiliaria</p>
+                        <a href="https://github.com/NicolasAybar/inmobiliaria">Ir al proyecto</a>
+                    </div>
+                </div>
+
+                <div class="proyecto">                
+                        <img src="img/moneda.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño CreativoConversor de moneda</h3>
+                        <p>Java</p>
+                        <a href="https://github.com/NicolasAybar/ConversorDeMonedaTamandua">Ir al proyecto</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/mapa.JPG" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Ricardo Lopez Cabrera 3513 , Cordoba
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamame: 351-3235508
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: nicokato10@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-github"></i></a>
+            <a href="https://www.linkedin.com/in/nicolas-aybar-9482671b5/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="bi bi-whatsapp"></i></a>
+        </div>
+        <div class="contenedorPie">
+            <small>&copy; 2023<b>Nicolas Aybar UTN</b> - Todos los derechos reservados</small>
+        </div>
+    </footer>
+    <a href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></a>
+    <script src="script.js"></script>
+</body>
+
+</html>
